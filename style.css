@@ -1,0 +1,880 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+.container {
+    height: 600px;
+    width: 100vw;
+    background-image: url("assets\\images\\backgroundimage.jpg");
+
+    background-size: cover;
+
+}
+
+.forfilter {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: brightness(30%);
+}
+
+:root {
+    --maincolor: rgb(255, 6, 15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+
+}
+
+option,
+select {
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.signin {
+    height: 30px;
+    font-weight: 550;
+    color: white;
+    width: 65px;
+    border-radius: 5px;
+    background-color: var(--maincolor);
+    border: none;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 80px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.p1,
+.p3 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.p2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logintext {
+    color: white;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.inp {
+    margin-top: 20px;
+}
+
+.inp2 {
+    height: 50px;
+    width: 366px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.753);
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.inp2::placeholder {
+    position: relative;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.644);
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.getstarted {
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: var(--maincolor);
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    position: relative;
+    bottom: -4px;
+    margin-left: 20px;
+}
+
+.get {
+    position: absolute;
+    left: 20px;
+}
+
+span {
+    margin-left: 140px;
+    margin-top: 3px;
+}
+
+/* now starting the now screen setup */
+
+.background2 {
+    height: 2300px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.moviechoice {
+    /* margin: 100px; */
+    height: 550px;
+    width: 70vw;
+}
+
+.heading {
+    color: white;
+    font-size: 25px;
+    margin: 30px 0 30px 0;
+}
+
+.moviebox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    line-height: 10px;
+}
+
+.box img {
+    height: 252px;
+    width: 175px;
+    border-radius: 10px;
+}
+
+.moviebox h1 {
+    /* color: white; */
+    font-size: 120px;
+    position: relative;
+    bottom: 50px;
+    left: -20px;
+
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-family: "Boldonse", system-ui;
+    font-weight: 700;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+    filter: brightness(110%);
+}
+
+.morereasons {
+    width: 70vw;
+    height: 330px;
+}
+
+.bigbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    line-height: 10px;
+
+}
+
+.boxx {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(71, 159, 241, 0.22);
+    box-shadow: 1px 1px 200px rgba(191, 23, 110, 0.291) inset;
+
+}
+
+.boxx p {
+    font-size: 15px;
+    padding: 10px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 200;
+}
+
+.boxx h3 {
+    padding: 20px 10px 10px 10px;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+}
+
+/* frequently asked questions */
+
+.questionbox {
+    width: 75vw;
+    height: 440px;
+}
+
+.bigquestionbox {
+    height: 100vh;
+    width: 700vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rectbox {
+    height: 58px;
+    width: 10%;
+    background-color: rgb(59, 53, 53);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px 0 15px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+}
+
+.questionheading {
+    font-size: 25px;
+}
+
+.plus {
+    font-size: 55px;
+    font-weight: 100;
+}
+
+.rectbox:hover {
+    filter: brightness(150%);
+    transition: filter 0.5s ease-out;
+}
+
+/* footer ka kaamchalo h aage */
+
+.footer {
+    color: white;
+    width: 70%;
+}
+
+.footheading {
+    font-size: 20px;
+}
+
+.infobox {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infobox ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+.ul {
+    margin-top: 30px;
+
+}
+
+.againlang {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 400px;
+}
+
+@media (max-width: 1200px) {
+
+    .container {}
+
+    .background2 {
+        height: 3000px;
+    }
+
+    .moviechoice {
+        height: 880px;
+    }
+
+    .box img {
+        height: 252px;
+        width: 190px;
+
+    }
+
+    .morereasons {
+        height: 650px;
+    }
+
+    .againlang {
+        right: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container {}
+
+    .background2 {
+        height: 3300px;
+    }
+
+    .moviechoice {
+        height: 1200px;
+    }
+
+    .box img {
+        height: 252px;
+        width: 230px;
+
+    }
+
+    .morereasons {
+        height: 650px;
+    }
+
+    .boxx {
+        height: 300px;
+        width: 250px;
+    }
+
+    .againlang {
+        right: 300px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .box img {
+        height: 252px;
+        width: 200px;
+    }
+
+    .boxx {
+        height: 300px;
+        width: 200px;
+    }
+
+    .againlang {
+        right: 150px;
+    }
+
+}
+
+@media (max-width: 651px) {
+
+    .container {}
+
+    .background2 {
+        height: 3200px;
+    }
+
+    .moviechoice {
+        height: 1200px;
+    }
+
+    .box img {
+        height: 250px;
+        width: 150px;
+
+    }
+
+    .morereasons {
+        height: 650px;
+    }
+
+    .boxx {
+        height: 300px;
+        width: 180px;
+    }
+
+    .againlang {
+        right: 300px;
+    }
+
+    .againlang {
+        right: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        height: 400px;
+    }
+
+    .background2 {
+        height: 3200px;
+    }
+
+    .moviechoice {
+        height: 1200px;
+    }
+
+    .box img {
+        height: 250px;
+        width: 150px;
+
+    }
+
+    .morereasons {
+        height: 650px;
+    }
+
+    .boxx {
+        height: 300px;
+        width: 165px;
+    }
+
+    .againlang {
+        right: 300px;
+    }
+
+    .againlang {
+        right: 150px;
+    }
+
+    .inp {
+        margin-top: 10px;
+    }
+
+    .inp2 {
+        height: 40px;
+        width: 280px;
+        border-radius: 5px;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+
+    .inp2::placeholder {
+        position: relative;
+        left: 20px;
+        font-size: 10px;
+    }
+
+    .getstarted {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .get {
+        position: absolute;
+        left: 8px;
+        bottom: 9px;
+    }
+
+    span {
+        margin-left: 120px;
+        margin-top: 3px;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    .logo {
+        height: 35px;
+
+    }
+
+    option,
+    select {
+        height: 25px;
+    }
+
+
+    .signin {
+        height: 25px;
+        font-weight: 550;
+        width: 65px;
+
+    }
+
+    .text {
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .p1,
+    .p3 {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .p2 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .login {
+
+        margin-top: 50px;
+    }
+
+    .logintext {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        height: 450px;
+    }
+
+    .background2 {
+        height: 2800px;
+    }
+
+    .moviechoice {
+        height: 1000px;
+    }
+
+    .box img {
+        height: 200px;
+        width: 110px;
+
+    }
+
+    .morereasons {
+        height: 650px;
+    }
+
+    .questionbox{
+        height: 250px;
+    }
+
+    .bigbox{
+        /* gap:1px; */
+    }
+
+    .boxx h3{
+        font-size: 22px;
+    }
+
+    .boxx {
+        height: 330px;
+        width: 125px;
+    }
+
+    /* .againlang {
+        right: 00px;
+    } */
+
+    .againlang {
+        right: 100px;
+    }
+
+    .inp {
+        margin-top: 30px;
+    }
+
+    .inp2 {
+        height: 40px;
+        width: 250px;
+        padding-left: 0px;
+    }
+
+    .inp2::placeholder {
+        position: relative;
+        left: 10px;
+        font-size: 10px;
+    }
+
+    .getstarted {
+        height: 40px;
+        width: 100px;
+        font-size: 13px;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .get {
+        position: absolute;
+        left: 8px;
+        bottom: 12.5px;
+    }
+
+    span {
+        margin-left: 69px;
+        margin-top: 3px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .logo {
+        height: 25px;
+
+    }
+
+    option,
+    select {
+        height: 20px;
+    }
+
+
+    .signin {
+        height: 20px;
+        font-weight: 550;
+        width: 65px;
+
+    }
+
+    .text {
+    margin-top: 25px;
+    }
+
+    .p1,
+    .p3 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .p2 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .login {
+
+        margin-top: 50px;
+    }
+
+    .logintext {
+        font-size: 10px;
+    }
+
+    li{
+        font-size: 11px;
+    }
+    .questionheading{
+        font-size: 15px;
+    }
+
+    .plus{
+        font-size: 35px;
+    }
+
+    .rectbox{
+        width: 60vw;
+        height: 35px;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .container {
+        height: 500px;
+    }
+
+    .heading{
+        font-size: 18px;
+    }
+
+    .background2 {
+        height: 2300px;
+    }
+
+    .moviebox{
+        width: 90vw;
+        gap: 15px;
+    }
+
+    .questionbox{
+        height: 220px;
+    }
+
+    .box h1{
+        font-size: 80px;
+        margin-left: 7px;
+    }
+
+    .moviechoice {
+        height: 700px;
+        
+    }
+
+    .box img {
+        height: 160px;
+        /* width: 110px; */
+
+    }
+
+    .morereasons {
+        height: 450px;
+    }
+
+    .bigbox{
+        gap:15px;
+        width: 90vw;
+    }
+
+    .boxx h3{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    .boxx p{
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    .boxx {
+        height: 220px;
+        width: 120px;
+    }
+
+    /* .againlang {
+        right: 00px;
+    } */
+
+    .againlang {
+        right: 100px;
+    }
+
+    .inp {
+        margin-top: 50px;
+    }
+
+    .inp2 {
+        height: 40px;
+        width: 200px;
+        padding-left: 0px;
+    }
+
+    .inp2::placeholder {
+        position: relative;
+        left: 10px;
+        font-size: 10px;
+    }
+
+   
+  
+
+    .get {
+        position: absolute;
+        left: 8px;
+        bottom: 12.5px;
+    }
+
+    span {
+        margin-left: 69px;
+        margin-top: 3px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .logo {
+        height: 25px;
+
+    }
+
+    option,
+    select {
+        height: 20px;
+        width: 70px;
+    }
+
+
+    .signin {
+        height: 20px;
+        font-weight: 550;
+        width: 65px;
+        width: 50px;
+
+    }
+
+    .text {
+    margin-top: 90px;
+    }
+
+    .p1,
+    .p3 {
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    .p2 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .login {
+
+        margin-top: 80px;
+    }
+
+    .logintext {
+        font-size: 8.5px;
+    }
+
+
+
+    li{
+        font-size: 11px;
+    }
+
+    .questionheading{
+        font-size: 15px;
+    }
+
+    .plus{
+        font-size: 35px;
+    }
+
+    .rectbox{
+        width: 60vw;
+        height: 35px;
+    }
+
+}
