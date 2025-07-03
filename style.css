@@ -326,7 +326,7 @@ span {
 
 @media (max-width: 1200px) {
 
-    .container {}
+
 
     .background2 {
         height: 3000px;
@@ -353,7 +353,7 @@ span {
 
 @media (max-width: 900px) {
 
-    .container {}
+
 
     .background2 {
         height: 3300px;
@@ -403,7 +403,7 @@ span {
 
 @media (max-width: 651px) {
 
-    .container {}
+
 
     .background2 {
         height: 3200px;
@@ -586,10 +586,6 @@ span {
 
     .questionbox{
         height: 250px;
-    }
-
-    .bigbox{
-        /* gap:1px; */
     }
 
     .boxx h3{
